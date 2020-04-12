@@ -4,26 +4,60 @@
   box-sizing: border-box;
 }
 
-body {
-  font-size: 14px;
+header {
+  background: #607D8B;
+  color: #212121;
+  text-align: center;
 }
 
-div {
-  width: 100%;
+body {
+  font-size: 14px;
+  background: #455A64;
+}
+
+div .input {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
   margin: 20px;
+}
+
+div .item{
+  margin: 5px;
+}
+
+div label{
+  color: #212121;
+  font: 16px sans-serif;
+  text-decoration: solid;
 }
 
 div li {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  background: #607D8B;
 }
 
 div li + li {
   margin-top: 15px;
 }
 
+li h1 {
+  color: #212121 ;
+}
+
+li a {
+  color: #263238 ;
+}
+
+li p {
+  color: #212121 ;
+  font: 14px sans-serif;
+} 
+
 button {
-  background: #7159c1;
+  background: #6B4E71;
   color: #fff;
   border: 0;
   padding: 10px 15px;
@@ -34,6 +68,8 @@ button {
 }
 
 div li button {
+  flex-direction: row;
   margin: 0 15px;
   background: #ca4949;
+  
 }
